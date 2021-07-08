@@ -33,4 +33,10 @@ Programda şu fonksiyonlar yer almalıdır;
 Öğrenci düğümleri öğrencilerin bilgilerini ayrıca kendilerinden bir sonraki öğrencinin adres bilgisini işaret edecektir. Ayrıca her öğrenci almış olduğu dersler için bir ders düğümü tutacaktır.
 Bu ders düğümleri içerisinde ise dersin bilgisi ve öğrencinin almış olduğu bir sonraki ders düğümünün adresi bulunacaktır.
 
+![Bağlantılı Liste Yapısı](https://user-images.githubusercontent.com/59123356/124971114-7bcd3f00-e031-11eb-9c2f-f0761dce81e3.JPG)
 
+Bu yapı içerisinde bir adet baş işaretçisi öğrenci bağıntı listesinin başında bulunacak. Ekleme ve tarama işlemlerinde tuttuğu adres ile işlem yapmamızı sağlayacaktır. Aynı durum “Ders Düğüm Baş” içinde geçerlidir.
+
+Düğümler içerisinde bulunan öğrenci bilgileri ve ders bilgileri struct yapısı yardımıyla soyutlanarak bir değişken tanımı oluşturuyoruz. Bu sayede her seferinde tek tek tanımlamaktansa struct tanımları içerisinde direk öğrenci değişkenini çağırarak tüm bilgileri işleyebiliyoruz.
+
+Ardından kurmuş olduğumuz yapıya göre elimizdeki üç adet dosyayı okuyarak bağlantılı liste yapısını düğümlere atayarak yapıyı oluşturuyoruz. Kurmuş olduğumuz yapı içerisinde ayrıca fonksiyonel olarak listeye tarayarak ara, kesişimbul ve derssil donksiyonlarını oluşturuyoruz. Bu fonksiyonlar düğüm yapılarına uygun şekilde kurarak verimli bir biçimde gerçekliyoruz. Dosyayayaz fonksiyonu ile de bir txt dosyası içerisine listemizin yeni ve bütün halini yazdırıyoruz.
